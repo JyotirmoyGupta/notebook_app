@@ -25,7 +25,7 @@ router.post(
   [
     body("title", "Enter a valid title").isLength({ min: 3 }),
     body("description", "description must be atleast 6 characters").isLength({
-      min: 5,
+      min: 6,
     }),
   ],
   fetchuser,
